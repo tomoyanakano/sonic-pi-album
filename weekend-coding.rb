@@ -1,7 +1,5 @@
 :se_bpm 136
 
-snare = :drum_snare_soft
-
 ### SAMPLES ###
 sample_1 = "/Users/nakanotomoya/Splice/sounds/packs/Paradox - Progressive House Vocals/PLX_-_Paradox_-_Progressive_House_Vocals/one-shots/fx_one-shots/PLX_PPHV_vocal_fx_reverse_Dmin.wav"
 sample_2 = "/Users/nakanotomoya/Splice/sounds/packs/For The Soul/loops/Vocals/PJ_FTS_71_kit_loop_Harmony_Peace_Love_Happiness_Vocal_Cmaj.wav"
@@ -49,7 +47,7 @@ live_loop :clap, sync: :met do
   ##| stop
   
   sleep 1
-  sample snare, release: 0.5, amp: 0.5
+  sample :drum_snare_soft, release: 0.5, amp: 0.5
   sample :elec_hi_snare, release: 0.4, amp: 0.5
   sleep 1
 end
@@ -189,9 +187,5 @@ live_loop :vocal_chops, sync: :met do
   end
   sleep 0.25
 end
-
-
-
-
 
 
